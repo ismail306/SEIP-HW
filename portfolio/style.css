@@ -1,0 +1,14 @@
+nav{
+
+}
+
+nav ul{
+    display:flex
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{}
+nav ul li a: :hover{
+
+}
