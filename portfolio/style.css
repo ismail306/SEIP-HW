@@ -1,14 +1,55 @@
+
+.navbar-design{
+    display: flex;
+    background-color:white;
+
+    padding: 30px;
+}
+.brand-logo {
+    margin-left: 5px;
+}
+
+.menubar {
+
+}
+
 nav{
 
 }
+nav ul li {
+    display: inline-block;
 
-nav ul{
-    display:flex
 }
-nav ul li{
-    list-style: none;
-}
-nav ul li a{}
-nav ul li a: :hover{
 
+nav ul li a {
+    padding:15px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+nav ul li a:hover{
+    color: chocolate;
+}
+.topnav-left {
+margin-left: 400px;
+  }
+
+  .topnav-right{
+    background-color: coral;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+
+  }
+  .mainbody{
+    background-image: url('/portfolio/Image/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1500px;
+    height: 100vh;
+}
+#mamo{
+    display: flex;
+    justify-content: space-around;
 }
