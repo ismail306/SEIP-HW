@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend text-align ="center" >XYZ Bank Bangladesh Limited</legend>
+        <form action="" method="get">
+            <table>
+                <tr>
+                    <td><label for="openingDate">Date:</label></td>
+                    <td><input type="date" name="openingDate" id="openingDate" ></td>
+                    <td><label for="AccountNumber">Account Number:</label></td>
+                    <td><input type="number" name="AccountNumber" id="AccountNumber" ></td>
+                </tr>
+                <tr>
+                    <td>Organizational Account Opening Form</td>
+
+                </tr>
+                <tr>
+                    <td><label for="acctitle">Account Title</label></td>
+                    <td>
+                        <input type="radio" name="acctitle" value="MSA" id="acctitle" checked>MSA
+                        <input type="radio" name="acctitle" value="AWCA" id="acctitle" >AWCA
+                        <input type="radio" name="acctitle" value="ERO" id="acctitle" >ERO
+                        <input type="radio" name="acctitle" value="MPSA" id="acctitle" >MPSA
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="currency">Currency</label></td>
+                    <td>
+                        <input type="radio" name="currency" value="TAKA" id="currency" checked>TAKA
+                        <input type="radio" name="currency" value="Dollar" id="currency" >Dollar
+                        <input type="radio" name="currency" value="Euro" id="currency" >Euro
+                        <input type="radio" name="currency" value="POUND" id="currency" >Pound
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="savingamount">Primary Saving Amount:</label></td>
+                        <td> <input type="number" name="savingamount" id="savingamount" ></td>
+                </tr>
+               <tr>
+                   <td><label for="name">Name:</label></td>
+                   <td><input type="text" name="name" id="name" placeholder="Please Enter your Name" required></td>
+              </tr>
+              <tr>
+                <td><label for="incomesource">Income Source:</label></td>
+                <td>
+                    <select name="incomesource" id="incomesource">
+                    <option value="" selected disabled>Select your source of income</option>
+                    <option value="business">Business</option>
+                    <option value="job">JOb</option>
+
+                </select>
+            </td>
+
+           </tr>
+              <tr>
+                   <td><label for="monthlyincome">Avg Monthly Income:</label></td>
+                   <td><input type="checkbox" id="monthlyincome" name="monthlyincome" value="monthlyincome">Less than 200,000</td>
+                   <td><input type="checkbox" id="monthlyincome" name="monthlyincome" value="monthlyincome">More than 200,000</td>
+               </tr>
+               <tr>
+                   <td><label for="phone">Phone:</label></td>
+                   <td><input type="number" id="phone" name="phone" maxlength="11" placeholder="Plz Inter your phone Number"></td>
+               </tr>
+               <tr>
+                   <td><label for="email">Email:</label></td>
+                   <td><input type="email" name="email" id="email"  placeholder="Plz Inter your Email Address"></td>
+               </tr>
+               <tr>
+                   <td><label for="birth">Birth Date:</label></td>
+                   <td><input type="date" name="birthDate" id="birth" ></td>
+               </tr>
+
+
+               <tr>
+                   <td><label for="gender">Gender:</label></td>
+                   <td>
+                       <input type="radio" name="gender" id="gender" value="male" checked >Male
+                       <input type="radio" name="gender" id="gender" value="female" >Female
+                       <input type="radio" name="gender" id="gender" value="other" >Other
+                   </td>
+               </tr>
+               <tr>
+                   <td><label for="country">Country Name:</label></td>
+                   <td>
+                       <select name="country" id="country">
+                           <option value="" selected disabled>Select a Country</option>
+                           <option value="bd" >Bangladesh</option>
+                           <option value="in">India</option>
+                           <option value="pak">Pakistan</option>
+                           <option value="nl">Nepal</option>
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td><label for="address">Address</label></td>
+                   <td><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
+               </tr>
+               <tr>
+                   <td><button type="submit">Send</button></td>
+               </tr>
+            </table>
+           </form>
+    </fieldset>
+</body>
+</html>
