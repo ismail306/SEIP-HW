@@ -1,0 +1,102 @@
+.container{
+
+}
+
+header{
+
+    text-align: center;
+    height: 100px;
+}
+
+.backgroundimg{
+
+    background-image: url('/image/bgimg1.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+
+
+}
+.txt1{
+    font-size: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #eff1f7;
+    margin-left:600px;
+    padding-top: 450px;
+}
+
+
+.flextest{
+    display: flex;
+    justify-content: space-around;
+}
+.img1{
+
+    height: 800px;
+    width: 800px;
+
+}
+.content-right{
+
+    height: 800px;
+    width: 700px;
+    background-color: orange;
+}
+
+p,section, .content-right, .social-link, .icon {
+    text-align: center;
+}
+
+.content-right a{
+
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 15px 50px;
+
+
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.content-right p{
+padding:100px;
+}
+.content-right h1{
+    color: white;
+    padding-top: 50px;
+    }
+section{
+    background-color: white;
+
+    height: 150px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+section p{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+}
+section a{
+    background-color: orange;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 15px 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+footer p{
+    margin-left: 200px;
+    margin-right: 200px;
+}

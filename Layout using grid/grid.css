@@ -15,6 +15,7 @@ header{
     text-align: center;
     height: 100px;
 }
+
 .backgroundimg{
     grid-area: backgroundimg;
     background-image: url('/image/bgimg1.jpg');
@@ -31,6 +32,7 @@ header{
     color: #eff1f7;
     margin-left:200px;
 }
+
 .backgroundimg a{
 
     background-color: orange;
