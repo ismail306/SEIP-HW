@@ -7,6 +7,10 @@ header{
     text-align: center;
     height: 100px;
 }
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
 
 .backgroundimg{
 
@@ -15,6 +19,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 1000px;
+    padding-top: 20px;
 
 
 }
@@ -92,10 +97,7 @@ section a{
 
 
 }
-h1{
-    text-transform: uppercase;
-    text-align: center;
-}
+
 footer p{
     margin-left: 200px;
     margin-right: 200px;
