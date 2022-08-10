@@ -6,8 +6,8 @@ h1{
     color: rgb(20, 32, 207) !important;
     font-weight:bold !important;
     font-size:40px !important;
-    padding-left: 130px;
-    padding-right: 80px;
+    padding-left: 200px;
+    padding-right: 100px;
     text-decoration: none;
 
 
@@ -22,15 +22,22 @@ h1{
         font-family: Titillium Web;
 
 }
+.textaereapadding{
+
+margin-left: 100px;
+margin-top: 200px;
+
+}
 .active{
     font-weight: 600;
 }
 navbar{
-    position: fixed;
+    position: fixed
+    ;
     top: 0;
     width: 100%;
 }
-#searchs {
+/* #searchs {
     width: 40px;
     height: 40px;
     border: none;
@@ -45,7 +52,7 @@ navbar{
     -ms-transition: width .55s ease;
     -o-transition: width .55s ease;
     transition: width .55s ease;
-}
+} */
 .my-4{
     background-color: white !important;
 }
@@ -57,4 +64,7 @@ h1{
 .footer-top-content-area {
     background: #f8f8f9;
     padding: 10px 50px;
+}
+a{
+    text-decoration: none;
 }
