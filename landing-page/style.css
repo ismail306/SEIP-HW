@@ -1,0 +1,60 @@
+h1{
+    background-color: red;
+}
+
+.nav-link-logo{
+    color: rgb(20, 32, 207) !important;
+    font-weight:bold !important;
+    font-size:40px !important;
+    padding-left: 130px;
+    padding-right: 80px;
+    text-decoration: none;
+
+
+}
+.nav-item{
+
+        text-transform: uppercase;
+        line-height: 25px;
+        --bs-nav-link-padding-y: 0rem;
+
+        padding: 8px 10px;
+        font-family: Titillium Web;
+
+}
+.active{
+    font-weight: 600;
+}
+navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#searchs {
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 10pt;
+    float: right;
+    color: #262626;
+    padding-left: 55px;
+    color: #000;
+    background: 0 0;
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+.my-4{
+    background-color: white !important;
+}
+h1{
+    background-color: white
+}
+
+
+.footer-top-content-area {
+    background: #f8f8f9;
+    padding: 10px 50px;
+}
