@@ -10,51 +10,61 @@
     <?php
     session_start();
     // include_once './store.php' ;
-    $student=$_SESSION['item'];
+    $product=$_SESSION['item'] ?? [];
 
     ?>
+    <a href="creat.php">Insert Data</a>
 
 
 
-        <div style="width:80%; margin: 0 auto ;text-align: center">
-        <form action="./store.php" method="POST">
-            <input name="id" type="text" placeholder="please Enter Student ID">
-            <input name ="name" type="text" placeholder="please Enter Student Name">
-            <button> Add item</button>
-        </form>
+    <div style="width:80%; margin: 0 auto ;text-align: center">
 
 
 
-    <table border="1" style="width:80%; margin: 0 auto">
-        <thead>
 
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-        </tr>
-        <tbody>
+        <table border="1" style="width:80%; margin: 0 auto">
+            <thead>
+
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+            <tbody>
+
+                <?php
+
+                // echo"<pre>";
+                // print_r($product);
+                foreach($product as $key=> $prod){?>
+
+            <tr>
+                <td> <?= $prod['id'] ?></td>
+                <td>  <?= $prod['name'] ?></td>
+                <td>  <?= $prod['price'] ?></td>
+                <td>
+                    <a href="delete.php?id=<?=$key?>"onclick="return confirm('Are you Sure ? ')">Delete</a>
+                    <a href="details.php?id=<?=$key?>">Details</a>
+                    <a href="edit.php?id=<?=$key?>">EDIT</a>
+                </td>
+            </tr>
+
+
             <?php
-            foreach($student as $std){?>
-
-           <tr>
-             <td> <?= $std['id'] ?></td>
-             <td>  <?= $std['name'] ?></td>
-         </tr>
-
-
-        <?php }
-            ?>
+            }
+                ?>
 
 
 
-        </tbody>
-        </thead>
+            </tbody>
+            </thead>
 
 
-    </table>
+        </table>
 
 
-        </div>
+    </div>
 
 
 </body>
