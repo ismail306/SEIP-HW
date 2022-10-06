@@ -10,4 +10,8 @@ class PublicController extends Controller
        // die('sdfvsdfvcsdg');
         return view('welcome');
     }
+    public function about(){
+        // die('sdfvsdfvcsdg');
+         return view('about');
+     }
 }
