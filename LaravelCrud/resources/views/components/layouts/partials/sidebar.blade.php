@@ -49,9 +49,9 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="forms.html">
+							<a href="user.html">
 								<i class="la la-keyboard-o"></i>
-								<p>Forms</p>
+								<p>User</p>
 								<span class="badge badge-count">50</span>
 							</a>
 						</li>

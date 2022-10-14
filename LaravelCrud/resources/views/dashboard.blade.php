@@ -1,7 +1,9 @@
 <x-layouts.master>
 
+<x-slot:title>
+    Dashboard
+</x-slot>
 
-    <div class="content">
                         <div class="container-fluid">
                             <h4 class="page-title">Dashboard</h4>
                             <div class="row">
@@ -393,12 +395,27 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
 
 
 
     </div>
 
 
-
+<x-slot:script>
+<script src="assets/js/jquery.3.2.1.min.js"></script>
+            <script src="assets/js/jquery-ui.min.js"></script>
+            <script src="assets/js/popper.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script src="assets/js/chartist.min.js"></script>
+            <script src="assets/js/chartist-plugin-tooltip.min.js"></script>
+            <script src="assets/js/bootstrap-notify.min.js"></script>
+            <script src="assets/js/bootstrap-toggle.min.js"></script>
+            <script src="assets/js/jquery.mapael.min.js"></script>
+            <script src="assets/js/world_countries.min.js"></script>
+            <script src="assets/js/circles.min.js"></script>
+            <script src="assets/js/jquery.scrollbar.min.js"></script>
+            <script src="assets/js/ready.min.js"></script>
+            <script src="assets/js/demo.js"></script>
+</x-slot>
 </x-layouts.master>
