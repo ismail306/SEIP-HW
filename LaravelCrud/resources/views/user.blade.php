@@ -23,6 +23,7 @@
                         <td>
                             <a href="#" class="btn btn-primary">Edit</a>
                             <a href="#" class="btn btn-danger">Delete</a>
+                            <a href="{{url('/user/1')}}" class="btn btn-primary">Show</a>
                         </td>
                     </tr>
                     <tr>
@@ -33,6 +34,7 @@
                         <td>
                             <a href="#" class="btn btn-primary">Edit</a>
                             <a href="#" class="btn btn-danger">Delete</a>
+                            <a href="{{route('user.show',[ 'id'=>2 ])}}" class="btn btn-primary">Show</a>
                         </td>
                     </tr>
                     <tr>
@@ -43,6 +45,7 @@
                         <td>
                             <a href="#" class="btn btn-primary">Edit</a>
                             <a href="#" class="btn btn-danger">Delete</a>
+                            <a href="#" class="btn btn-primary">Show</a>
                         </td>
                     </tr>
                 </tbody>

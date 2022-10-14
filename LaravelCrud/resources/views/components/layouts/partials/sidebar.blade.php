@@ -35,7 +35,7 @@
 					</div>
 					<ul class="nav">
 						<li class="nav-item active">
-							<a href="index.html">
+							<a href="{{route('dashboard')}}">
 								<i class="la la-dashboard"></i>
 								<p>Dashboard</p>
 								<span class="badge badge-count">5</span>
@@ -49,7 +49,7 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a href="user.html">
+							<a href="{{route('user.show')}}">
 								<i class="la la-keyboard-o"></i>
 								<p>User</p>
 								<span class="badge badge-count">50</span>
