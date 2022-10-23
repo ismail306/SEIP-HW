@@ -1,12 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DashboardController;
+
+
 
 
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/dashboard', function () {
+
+Route::get('/categories', [CategoryController::class, 'index']) ->name('categories.index');
+
+
+Route::get('/dashboard',function () {
     return view('dashboard');
 
 })->name('dashboard');
@@ -20,12 +28,3 @@ Route::fallback(function () {
     dd("Tomar caua poron korte parbo na");
 });
 
-// Route::get('/user/{id}', function () {
-//     dd("Showing");
-
-// }) ->name('user.show');
-
-// Route::get('/user/show', function () {
-//    return view('user.show');
-
-// });
