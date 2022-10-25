@@ -11,15 +11,17 @@
 
     </tr>
     <tbody>
+        <?php $sl=1; ?>
         @foreach ($data as $category)
             <tr>
-                <td>12</td>
+                <td>{{$sl++}}</td>
                 <td>{{$category->cname}}</td>
                 <td>
                     <a href="">Edit</a>
                     <a href="">Delete</a>
                 </td>
             </tr>
+
         @endforeach
 
 
