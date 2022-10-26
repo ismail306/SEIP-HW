@@ -12,8 +12,47 @@ class CategoryController extends Controller
     {
         $categories = category::all();
 
-        return view('category',[
+        return view('category', [
             'data' => $categories
         ]);
+    }
+
+    public function show($id)
+    {
+        $categorydata = category::find($id);
+
+        return view('show', compact('categorydata'));
+    }
+
+    public function create()
+    {
+
+        return view('additem');
+    }
+    public function store(Request $request)
+    {
+        $category = new category();
+        $category->cname = $request->cname;
+        $category->is_active = $request->is_active ? true : false;
+        $category->save();
+        return redirect()
+            ->route('categories.index')
+            ->withMessage('Category added successfully');
+    }
+
+    public function edit($id)
+    {
+        $categorydata = category::find($id);
+        return view('update', compact('categorydata'));
+    }
+    public function update(Request $request, $id)
+    {
+        $category = category::find($id);
+        $category->cname = $request->cname;
+        $category->is_active = $request->is_active ? true : false;
+        $category->save();
+        return redirect()
+            ->route('categories.index')
+            ->withMessage('Category updated successfully');
     }
 }

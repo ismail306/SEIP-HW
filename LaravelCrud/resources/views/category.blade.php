@@ -1,33 +1,41 @@
 <x-layouts.master>
 
-<x-slot:title>
-    Categories
-</x-slot>
-<table border="1">
-    <tr>
-        <th>SL#</th>
-        <th>Title</th>
-        <th>Action</th>
+    <x-slot:title>
+        Categories
+        </x-slot>
 
-    </tr>
-    <tbody>
-        <?php $sl=1; ?>
-        @foreach ($data as $category)
+        <div class="btn-toolbar-mb-2 mb-md-0">
+            <a href="{{ route('category.create') }}" class="btn btn-sm btn-outline-secondary">Add Category</a>
+
+        </div>
+
+
+        <table border="1">
             <tr>
-                <td>{{$sl++}}</td>
-                <td>{{$category->cname}}</td>
-                <td>
-                    <a href="">Edit</a>
-                    <a href="">Delete</a>
-                </td>
+                <th>SL#</th>
+                <th>Title</th>
+                <th>Action</th>
+
             </tr>
+            <tbody>
+                <?php $sl = 1; ?>
+                @foreach ($data as $category)
+                <tr>
+                    <td>{{$sl++}}</td>
+                    <td>{{$category->cname}}</td>
+                    <td>
+                        <a href="{{route('categories.edit',['id'=>$category->id])}}">Edit</a>
+                        <a href="{{route('categories.show',['id'=>$category->id])}}">Show</a>
+                        <a href="">Delete</a>
+                    </td>
+                </tr>
 
-        @endforeach
+                @endforeach
 
 
 
-    </tbody>
-</table>
+            </tbody>
+        </table>
 
 
 
