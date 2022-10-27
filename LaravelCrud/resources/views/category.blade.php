@@ -24,9 +24,13 @@
                     <td>{{$sl++}}</td>
                     <td>{{$category->cname}}</td>
                     <td>
-                        <a href="{{route('categories.edit',['id'=>$category->id])}}">Edit</a>
-                        <a href="{{route('categories.show',['id'=>$category->id])}}">Show</a>
-                        <a href="">Delete</a>
+                        <button type="button" class="btn btn-outline-success"><a href="{{route('categories.edit',['id'=>$category->id])}}">Edit</a></button>
+                        <button type="button" class="btn btn-outline-warning"><a href="{{route('categories.show',['id'=>$category->id])}}">Show</a></button>
+
+
+                        <button type="button" class="btn btn-outline-danger"> <a href="">Delete</a></button>
+
+
                     </td>
                 </tr>
 

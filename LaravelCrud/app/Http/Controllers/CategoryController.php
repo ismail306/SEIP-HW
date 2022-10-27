@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\category;
 
+use App\Models\category;
+use App\Http\Requests\CategoryRequest;
 use Illuminate\Http\Request;
+
+
 
 class CategoryController extends Controller
 {
@@ -29,7 +32,7 @@ class CategoryController extends Controller
 
         return view('additem');
     }
-    public function store(Request $request)
+    public function store(categoryRequest $request)
     {
         $category = new category();
         $category->cname = $request->cname;
@@ -45,7 +48,7 @@ class CategoryController extends Controller
         $categorydata = category::find($id);
         return view('update', compact('categorydata'));
     }
-    public function update(Request $request, $id)
+    public function update(CategoryRequest $request, $id)
     {
         $category = category::find($id);
         $category->cname = $request->cname;

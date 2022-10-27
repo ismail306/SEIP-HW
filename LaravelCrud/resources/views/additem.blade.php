@@ -1,11 +1,27 @@
 <h1>Create Categories</h1>
+
+
+@if ($errors->any())
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
+
 <form action="{{route('categories.store')}}" method="post">
     @csrf
 
     <!-- Text input -->
     <div class="form-outline mb-4">
         <label class="form-label" for="nameInput">Title</label>
-        <input name="cname" type="text" id="nameInput" class="form-control" />
+        <input name="cname" value="{{old('cname')}}" type="text" id="nameInput" class="form-control" />
+
+        @error('cname')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
 
     </div>
 
