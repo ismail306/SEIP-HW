@@ -35,8 +35,15 @@ class CategoryController extends Controller
     public function store(categoryRequest $request)
     {
         $category = new category();
+        $originalname = $request->file('image')->getClientOriginalName();
+        $filename = time() . date('y-m-d') . $originalname;
+
         $category->cname = $request->cname;
         $category->is_active = $request->is_active ? true : false;
+
+        $category->image = $filename;
+        $request->file('image')->storeAs('public/categories', $filename);
+
         $category->save();
         return redirect()
             ->route('categories.index')
