@@ -24,7 +24,10 @@ class CategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'cname' => 'required|max:255|min:3'
+            'cname' => 'required|max:255|min:3',
+
+
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
     }
 }

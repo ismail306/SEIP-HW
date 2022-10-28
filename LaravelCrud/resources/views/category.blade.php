@@ -28,7 +28,7 @@
                         <button type="button" class="btn btn-outline-warning"><a href="{{route('categories.show',['id'=>$category->id])}}">Show</a></button>
 
 
-                        <button type="button" class="btn btn-outline-danger"> <a href="">Delete</a></button>
+                        <button type="button" class="btn btn-outline-danger"> <a href="{{route('categories.destroy',['id'=>$category->id])}}">Delete</a></button>
 
 
                     </td>
